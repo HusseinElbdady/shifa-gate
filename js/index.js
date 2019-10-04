@@ -87,9 +87,7 @@ $('.phase-slider .owl-carousel').owlCarousel({
 const viewer = new Viewer(document.getElementById('image'), {
   inline: false,
   viewed() {
-    viewer.zoomTo(1);
+    viewer.zoomTo(0.3);
   },
 });
-
-
 

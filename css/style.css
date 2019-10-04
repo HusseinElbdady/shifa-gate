@@ -304,10 +304,9 @@ nav {
 }
 @media (max-width: 992px) { 
   .vid iframe {
-    height: 400px;
+    height: 350px;
   } 
  }
-
 
 
 /* / youtube video */
@@ -370,9 +369,6 @@ nav {
 }
 
 .diagram .diagram-container {
-  /*background-image: url('../images/bg.png');*/
-  /* background-color: rgba(0,0,0 , 0.5); */
-  /*background-size: 100% 100%;*/
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,10 +386,9 @@ nav {
   color: #c39764;
 }
 .project-steps .btn, .download-diagram {
-  color: #fff !important;
   font-size: 25px;
   /* width: 250px; */
-  padding: 8px 40px;
+  padding: 15px 40px;
   border-radius: 8px;
   margin: 8px;
   -webkit-transition: all .3s ease-in-out;
@@ -404,16 +399,83 @@ nav {
   opacity: .7;
 }
 .download-pdf {
-  background-color: #EFCB8D;
-}
-.project-steps .two {
-  /* background-color: #45ADE2; */
-}
-.project-steps .three {
-  /* background-color: #D75050; */
+  background-color: #EACB95;
+  color: #000 !important;
 }
 
 /* / Diagram */
+.buying {
+  background-color: #F7F4F0;
+}
+.buying h2 {
+  border-bottom: 1px solid #222222;
+}
+@media (max-width: 768px) {
+  .buying .row {
+    padding: 8px !important
+  }
+  .buying .row .col-md {
+    padding: 0 !important;
+  }
+}
+.buying ul {
+  list-style-image: url('../images/dot.png');
+}
+@media (max-width: 768px) {
+  .buying ul {
+    padding: 3px !important
+  }
+}
+.buying ul li {
+  font-size: 25px;
+  margin: 30px 10px;
+  border-bottom: .5px solid #22222238;
+  padding: 2px;
+  font-weight: 500
+}
+@media (max-width: 576px) {
+  .buying ul li {
+    font-size: 20px
+  }
+}
+.buying .border-left {
+  border-left: 2px solid #231F20
+}
+@media (max-width: 576px) {
+  .buying .border-left {
+    border-left: 0 !important
+  }
+}
+
+.phase-map-container {
+  position: relative;
+  display: flex;
+  justify-content: center
+}
+@media (max-width: 768px) {
+  .phase-map-container img {
+    width: 100% !important;
+    height: 350px;
+  }
+}
+
+.phase-map-container a{
+  position: absolute;
+  bottom: 150px;
+  background-color: #000;
+  color: #c39764;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .phase-map-container a{
+    bottom: 100px;
+    font-size: 20px;
+    padding: 15px 30px
+  }  
+}
+/* buying */
+/* / buying */
 
 /* phone-barcode */
 
@@ -478,3 +540,4 @@ footer .phone i {
   text-decoration:none;
  }
 /* / footer */
+
