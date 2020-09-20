@@ -5,13 +5,13 @@ $(".navbar .collapse .to-activate").on("click", function () { // to toggle activ
 
 
 // search from toggle 
-$(".search-icon-container").on('click', function() {
+$(".search-icon-container").on('click', function () {
   $('.search-form form').fadeToggle();
-})
+});
 
 // Navbar scroll auto hide 7 show
 
-if(document.querySelector(".nav-index")) {
+if (document.querySelector(".nav-index")) {
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (currentScrollPos < 120) {
@@ -19,12 +19,14 @@ if(document.querySelector(".nav-index")) {
     } else {
       document.querySelector(".nav-index").style.top = '-160px';
     }
-  }};
+  };
+}
+
 // to go to diagram bg
 let diagramBG = $(".diagram-bg-container").position();
 $('.Features-btn').click(function () {
   $('html, body').animate({
-    scrollTop: diagramBG.top -55
+    scrollTop: diagramBG.top - 55
   }, 500);
 });
 
@@ -32,11 +34,11 @@ $('.Features-btn').click(function () {
 let map = $(".map").position();
 $('.map-btn').click(function () {
   $('html, body').animate({
-    scrollTop: map.top -40
+    scrollTop: map.top - 40
   }, 500);
 });
 
-$('.contactus-btn').click(function() {
+$('.contactus-btn').click(function () {
   $("html, body").animate({ scrollTop: $(document).height() }, 1000);
 });
 
@@ -84,10 +86,11 @@ $('.phase-slider .owl-carousel').owlCarousel({
   }
 });
 
-const viewer = new Viewer(document.getElementById('image'), {
+
+
+const viewer = new Viewer(document.querySelector('.phase-image'), {
   inline: false,
   viewed() {
     viewer.zoomTo(0.3);
   },
 });
-

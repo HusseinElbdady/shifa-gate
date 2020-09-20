@@ -25,6 +25,12 @@ nav {
     background-color: #f5f5dcbd
   }
 }
+@media (max-width: 768px) {
+  nav {
+    position: static !important
+  }
+}
+
 .nav-stages {
   background-color: #f5f5dcbd;
   position: static !important;
@@ -46,6 +52,16 @@ nav {
   }
 }
 
+
+@media (max-width:768px) {
+
+  .navbar .navbar-brand img {
+
+    margin-right: 0;
+    height: 90px;
+    width: 130px;
+  }
+}
 .navbar .nav-text .nav-item a {
   font-size: 18pt;
   margin-left: 15px;
@@ -252,6 +268,12 @@ nav {
   height: 80vh;
 }
 
+@media (max-width:992px) { 
+.slider .item img {
+  width: 100vw;
+  height: 60vh;
+}
+}
 .slider .owl-theme .owl-nav {
   display: none
 }
@@ -365,7 +387,11 @@ nav {
   .diagram .map {
     height: auto;
   }
-
+}
+@media (max-width: 576px) {
+  .diagram .map img{
+    height: 320px;
+  }
 }
 
 .diagram .diagram-container {
